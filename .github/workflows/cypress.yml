@@ -1,0 +1,12 @@
+name: Cypress Cucumber Tests
+on: [push]
+jobs:
+  Cypress_Cucumber_Tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitCode
+        uses: actions/checkout@v2
+      - name: Run Cypress Test
+        uses: cypress-io/github-action@v5
+        with:
+          command: npx cypress run --browser chrome --record --key 70c0708b-2de3-4047-8243-56d120b06955
