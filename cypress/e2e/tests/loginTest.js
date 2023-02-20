@@ -1,4 +1,4 @@
-import loginPage from "../PagesObjects/loginPage";
+import loginPage from "../pageObjects/loginPage";
 const { Given, When, Then } = require("@badeball/cypress-cucumber-preprocessor");
 
 Given('I open the website', () => {
